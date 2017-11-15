@@ -5,7 +5,7 @@ package mymovielist.model;
  * @author Cassandra
  */
 public class movie {
-    private String MovieTitle;
+    public String MovieTitle;
 
     public String getMovieTitle() {
         return MovieTitle;

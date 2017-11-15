@@ -10,6 +10,7 @@ import mymovielist.control.controller;
 public class MainMenuView{
     
     Scanner myScanner = new Scanner(System.in);
+    controller controller = new controller(); 
     
     public MainMenuView() {
         System.out.println("\n------------------------------"
@@ -64,27 +65,22 @@ public class MainMenuView{
     }
 
     private void viewList() {
-        controller viewList = new controller();
-        viewList.viewList();
+        controller.viewList();
     }
 
     public void add() {
-        controller addMovie = new controller();
-        addMovie.add();
+        controller.add();
     }
 
     public void remove() {
-        controller removeMovie = new controller();
-        removeMovie.remove();
+        controller.remove();
     }
 
     public void delete() {
-        controller deleteMovie = new controller();
-        deleteMovie.delete();
+        controller.delete();
     }
 
     private void exit() {
-        controller exitApp = new controller();
-        exitApp.exitApp();
+        controller.exitApp();
     }
 }
