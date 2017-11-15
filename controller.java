@@ -18,16 +18,6 @@ public class controller {
     
     Set<String> movieList = new TreeSet<>();
 
-    // controller typically contains a hashMap
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // v or V
     public void viewList() {
         
