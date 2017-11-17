@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 17, 2017 1:31:59 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernateexample.NoteCard" table="note_card" catalog="card" optimistic-lock="version">
+        <id name="noteCardId" type="java.lang.Integer">
+            <column name="note_card_id" />
+            <generator class="identity" />
+        </id>
+        <property name="noteCardQuestion" type="string">
+            <column name="note_card_question" length="100" not-null="true" />
+        </property>
+        <property name="noteCardAnswer" type="string">
+            <column name="note_card_answer" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
